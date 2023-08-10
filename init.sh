@@ -35,3 +35,12 @@ if [[ "resp" == "y"]]; then
     sudo apt-get install -y python3-pip
 fi
 unset resp
+
+## Set autocomplete ignore case 
+sudo echo "set autocompletion-ignore-case On" > /etc/inputrc
+sudo echo "set show-all-if-ambiguous On" > /etc/inputrc
+sudo echo "TAB: menu-complete" > /etc/inputrc
+
+
+## restart bash to apply changes
+exec bash
