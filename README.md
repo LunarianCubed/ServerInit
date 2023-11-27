@@ -2,7 +2,10 @@
 shell scripts to initialize server environments
 
 ## bashrc
-to replace the default .bashrc file
+to replace the default ~/.bashrc file
+
+##vimrc
+a common vim configuration, save as ~/.vimrc
 
 ## init.sh
 to initialize the server environment, including:
