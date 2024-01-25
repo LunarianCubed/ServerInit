@@ -15,6 +15,6 @@ to initialize the server environment, including:
 - - Nodejs
 - - npm
 - - pip3
-//TODO: 
 - install vim (commonly installed defaultly) and set vimrc
+//TODO: 
 - install git (have to be installed before to get this repo) and set gitconfig 

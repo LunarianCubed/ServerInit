@@ -12,6 +12,14 @@ if [[ "resp" == "y"]]; then
 fi
 unset resp
 
+read -p "Install vim-Plug? (y/n) " -n 1 -r resp
+if [[ "resp" == "y"]]; then
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vimcurl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+unset resp
+
 read -p "Install neovim? (y/n) " -n 1 -r resp
 if [[ "resp" == "y"]]; then
     sudo apt-get install -y neovim
