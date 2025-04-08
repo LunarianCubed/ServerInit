@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+
 Plug 'prabirshrestha/vim-lsp'
 
 if executable('ccls')
@@ -17,6 +18,9 @@ let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:cpp_experimental_simple_template_highlight = 1
+
+" Autocompletion, requires to run `npm ci` in 
+" `~/.vim/plugged/coc.nvim/`
 " Plug 'neoclide/coc.nvim', {'brance':'release'}
 
 
@@ -49,3 +53,5 @@ set termguicolors
 colorscheme solarized8
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE
+
+set bg=dark
